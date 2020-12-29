@@ -11,7 +11,7 @@ export default function counter() {
   return (
     <div>
       Counter: {value} <br />
-      <button onClick={incrementOne}>Increment One</button>
+      <button onClick={incrementOne}>Increment One!</button>
     </div>
   );
 }
