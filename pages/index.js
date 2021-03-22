@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import  Foo from './foo'
 
 const Counter = (props) => {
   const [count,setCount] = useState(0)
@@ -25,7 +26,7 @@ const Counter = (props) => {
 export default function Home() {
   return (
     <div>
-      <Counter />
+      <Foo />
     </div>
   );
 }
