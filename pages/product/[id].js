@@ -13,7 +13,7 @@ export async function getStaticProps ({params}) {
 
     // Dummy get Product from table
     const product = {
-        id,
+        id: `${id}`,
         name: `Product ${id}`
     }
     console.log(`dummy: get product from table with id ${id}`)
