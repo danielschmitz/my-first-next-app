@@ -4,7 +4,7 @@ export async function getStaticPaths(context) {
     const paths = posts.map((id) => ({
       params: { id: `${id}` },
     }));
-    return { paths, fallback: false };
+    return { paths, fallback: true };
   }
 
 
@@ -26,5 +26,6 @@ export async function getStaticProps ({params}) {
 }
 
 export default function Product(props) {
+    if (!props.product) return null
     return <p>Show Product with id {props.product.id} and name '{props.product.name}' </p>
 }
